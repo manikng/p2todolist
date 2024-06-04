@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Girl handwriting',cursive;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {   
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 20px;
+}
+
+h1{
+    font-size: 3vw;
+}
+
+
+.todoapp h2 img {
+    max-width: 15vw;
+    height: auto;
+    margin-left: 2vw;
+}
+
+.todoapp {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 10vh auto 2vh;
+    padding: 2vh 3vh 5vh;
+    border-radius: 20px;
+    background-image: url('images/cave-blue-cave-nature-ice-cave-wallpaper-preview.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.todoapp h2 {
+    font-family: 'Girl handwriting',cursive;
+    font-style: var(--ff0000);
+    color: antiquewhite;
+    font-size: 2.5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vmax;
+}
+
+.todoapp h2 img {
+    width: 6vw;
+    margin-left: auto;
+}
+.row{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #ededed;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-bottom: 2vh;
+    /* padding: 0.4vw 1vw; if maine esa kiya to button full uper neeche puri tarah se 
+    fill nhi hoga bcz uske parent mai to padding de rakhi hai uper neeche  */
+}
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    border-radius: 10px;
+    padding: 1vh 2vw;
+    height: 3.1vmax;
+    font-size: 1.5vmax;
+}
+button{    
+    background: #4e085f;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 2.1vmax;
+    cursor: pointer;
+    padding: 3vh 3vw;
+    font-size: 2.5vmax;
+    /* this is mine
+    background: #4e085f;
+    color: #fff;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 1vw 2vw; */
+
+}
+/* #task-list{
+    padding: 2vw 2.4vw;
+    margin: 0;
+} */
+h1{
+    font-family: 'Girls Handwriting', cursive;
+
+    color:#1950bd;
+}
+ul li {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    padding: 1vh 2vw 1vh 3vw;
+    user-select: none;
+  /*   font-family:'Girl-next-door' ,'roboto','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'fantasy';
+    margin-bottom: 2vmax;
+    font-size: 3.4vmax;
+    color: white;
+
+}
+ul li.unchecked{
+    padding-right: 13px;
+}
+ul li::before{
+    content: '';
+    position : absolute;
+    width: 2.5vw;
+    height: 4vmax;
+    padding:  0vmax 0vmax;
+    cursor: pointer;
+    border-radius: 50%;
+    background-image: url('images/cave-blue-cave-nature-ice-cave-wallpaper-preview.jpg');
+/*     background-image: url('images/unchecked.png'); */
+    background-size: cover;
+    background-position: center;
+    left: 0;    
+
+
+}
+
+input{
+    font-size: 2vmax;
+}
+/* 
+li {
+    position: relative;    
+}
+li cross {    
+    /* if kisi ki position absolute hai aur use center mai laana ho to uske parent ko relative dena padega 
+    aur uske andar us element ko center mai laane ke liye us element ko absolute dena padega 
+    aur us element ko top 50% left 50% dena padega aur uske baad us element ko translate(-50%,-50%) dena padega 
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+ */
+
+ ul li span {/*if positon absolute nhi kiya to ye bhagega apne parent se idhar udhar baat nhi manega 
+    jiddi bacha ban jayega  */
+    position: absolute;
+
+    right: 0.4vw;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #4e085f;
+    text-align: center;
+    border-radius: 50%;
+ }
+
+ ul li span:hover{
+    color: #ff0000;
+    cursor: pointer;
+ }
+ul li.checked{
+    text-decoration: line-through;
+    color: #4e085f;
+}
+ul li.checked::before{
+    background-image: url('images/checked.png');
+    background-color: #4e085f;
+}
+
+/* ---------------------notmine media queries*/
+
+
+
+
+
+
+
+/* -------------mediaqueries making it responsive------------ */
+ @media (max-width: 530px) {
+    *{
+    font-family:'Girls Handwriting', 'cursive';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    .todoapp {
+        margin: 20vmax 2vw;
+        padding: 2vw 2.4vw 2vw 2vw;
+    }
+
+    .todoapp h2 {
+        font-size: 8vmax;
+        margin-bottom: 4vh;
+        margin-left: 2vmax;
+    }
+
+    h2 {
+        font-size: 8vw;
+    }
+/* note :ydi todoapp class ke ander hai h2 to usmai
+properties like vw etc koi bhi css lagane ke liye 
+us class ke hokar jana hoga 
+basically it is like a tree structure
+is branch se us branch mai jana haito us branch ko phle likna hoga phir last mai bo branch jise katna hai 
+uske properties likni hongi */
+  .todoapp h2 img {
+        width: 20vw;
+        margin-right: 2vmax;
+    }
+    h1{
+        font-size: 6vw;
+    }
+    .todoapp h2{
+        font-size: 6vw;
+    }
+    input{
+        padding: 2vh 2vw;
+        font-size: 2.3vh;
+    }
+    ul li {
+       
+        padding: 2vh 2vh 2vh 7.4vh;
+        margin-left: 0.9vmax;
+        margin-right: 1.3vh;
+        margin-bottom: 2vmax;
+    }
+    li {
+        position: relative;
+    }
+    ul li span{
+        position: absolute;
+        font-size: 4vh; 
+        vertical-align: middle; /* Add this line */
+    }
+
+  /*   ul li.checked::before {
+        width: 3vh;
+        height: 1.6rem;
+    }
+    ul li.unchecked::before{
+        width: 2.4vh;
+    }  
+    */
+    ul li::before {
+        content: '';
+        position: absolute;
+        width: 5.5vw;
+        height: 2vmax;
+        padding: 1vh 1vw;
+        cursor: pointer;
+        border-radius: 50%;
+        background-image: url('images/cave-blue-cave-nature-ice-cave-wallpaper-preview.jpg');
+        /* background-image: url('images/unchecked.png'); */
+        background-size: cover;
+        background-position: center;
+        left: 0;
+    }
+}
+
+ 
