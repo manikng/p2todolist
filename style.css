@@ -121,10 +121,10 @@ ul li {
     color: white;
 
 }
-ul li.unchecked{
+/* ul li.unchecked{
     padding-right: 13px;
-}
-ul li::before{
+} */
+/* ul li::before{
     content: '';
     position : absolute;
     width: 2.5vw;
@@ -139,7 +139,7 @@ ul li::before{
     left: 0;    
 
 
-}
+} */
 
 input{
     font-size: 2vmax;
@@ -175,14 +175,14 @@ li cross {
     color: #ff0000;
     cursor: pointer;
  }
-ul li.checked{
+/* ul li.checked{
     text-decoration: line-through;
     color: #4e085f;
 }
 ul li.checked::before{
     background-image: url('images/checked.png');
     background-color: #4e085f;
-}
+} */
 
 /* ---------------------notmine media queries*/
 
@@ -258,7 +258,7 @@ uske properties likni hongi */
         width: 2.4vh;
     }  
     */
-    ul li::before {
+/*     ul li::before {
         content: '';
         position: absolute;
         width: 5.5vw;
@@ -271,7 +271,7 @@ uske properties likni hongi */
         background-size: cover;
         background-position: center;
         left: 0;
-    }
+    } */
 }
 
  
