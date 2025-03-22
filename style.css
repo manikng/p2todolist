@@ -109,11 +109,8 @@ h1{
     color:#1950bd;
 }
 ul li {
-    list-style: none;
-    cursor: pointer;
     position: relative;
     padding: 1vh 2vw 1vh 3vw;
-/*     user-select: none;  this make nobody can copy the text*/
   /*   font-family:'Girl-next-door' ,'roboto','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: 'fantasy';
     margin-bottom: 2vmax;
@@ -121,25 +118,6 @@ ul li {
     color: white;
 
 }
-/* ul li.unchecked{
-    padding-right: 13px;
-} */
-/* ul li::before{
-    content: '';
-    position : absolute;
-    width: 2.5vw;
-    height: 4vmax;
-    padding:  0vmax 0vmax;
-    cursor: pointer;
-    border-radius: 50%;
-    background-image: url('images/cave-blue-cave-nature-ice-cave-wallpaper-preview.jpg');
-/*     background-image: url('images/unchecked.png'); */
-    background-size: cover;
-    background-position: center;
-    left: 0;    
-
-
-} */
 
 input{
     font-size: 2vmax;
