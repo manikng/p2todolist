@@ -113,7 +113,7 @@ ul li {
     cursor: pointer;
     position: relative;
     padding: 1vh 2vw 1vh 3vw;
-    user-select: none;
+/*     user-select: none;  this make nobody can copy the text*/
   /*   font-family:'Girl-next-door' ,'roboto','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: 'fantasy';
     margin-bottom: 2vmax;
